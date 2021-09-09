@@ -20,6 +20,10 @@ public class HomePageUI {
 	static WebElement singInText;
 	
 	
+	@FindBy(xpath="//input[@type='email']")
+	static WebElement username;
+	
+	
 	public static void clickOnLoginText()
 	{
 		

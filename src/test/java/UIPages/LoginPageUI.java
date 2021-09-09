@@ -15,10 +15,17 @@ public class LoginPageUI {
 
 	@FindBy(xpath = "//span[@id='nav-link-accountList-nav-line-1']")
 	WebElement loginText;
+	
+	
+	@FindBy(xpath="//input[@type='email']")
+	static WebElement username;
+	
 
 	
 	public void loginInto()
 	{
 		loginText.click();
+		username.sendKeys("govindpatil80@gmail.com");
+	
 	}
 }
